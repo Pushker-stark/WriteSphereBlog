@@ -2,14 +2,17 @@ const express = require('express');
 const mongoose = require('mongoose');
 const postRoutes = require('./routes/Post');
 const cors = require('cors');
+const dotenv = require('dotenv');
 
+dotenv.config();
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT||9000;
 
 app.use(cors());
 
+
 //connect mongoDB via mongoose
-mongoose.connect(dotenv.MONGO_URL,{
+mongoose.connect(process.env.MONGO_URL,{
     useNewUrlParser:true,
     useUnifiedTopology:true
 }).then(()=>{

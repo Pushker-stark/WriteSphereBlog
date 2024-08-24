@@ -7,8 +7,8 @@ Writesphere is a full-stack blog application that allows users to create, read, 
 
 ## **Live Demo**
 
-- **Frontend (User Interface):** [Writesphere Blog Frontend](https://your-frontend-site.netlify.app)
-- **Backend (API):** [Writesphere Backend API](https://your-backend-service.onrender.com)
+- **Frontend (User Interface):** [Writesphere Blog Frontend](https://writesphereblog-pn.netlify.app)
+- **Backend (API):** [Writesphere Backend API](https://writesphereblog-backend.onrender.com)
 
 ## **Features**
 
@@ -22,12 +22,12 @@ Writesphere is a full-stack blog application that allows users to create, read, 
 
 ### **Home Page**
 
-- **URL:** [https://your-frontend-site.netlify.app](https://your-frontend-site.netlify.app)
+- **URL:** [https://writesphereblog-pn.netlify.app](https://writesphereblog-pn.netlify.app/)
 - **Description:** Displays a list of all blog posts. Click on a post title to view more details.
 
 ### **Create a New Blog Post**
 
-- **URL:** [https://your-frontend-site.netlify.app/new](https://your-frontend-site.netlify.app/new)
+- **URL:** [https://writesphereblog-pn.netlify.app/new](https://writesphereblog-pn.netlify.app/new)
 - **Description:** Click on the "New Post" link in the header navigation to open a form for creating a new blog post.
 
 ### **Edit or Delete a Blog Post**
@@ -45,42 +45,42 @@ The Writesphere API provides endpoints to manage blog posts. These endpoints are
   - **Description:** Fetches a list of all blog posts.
   - **Example:**
     ```bash
-    curl https://your-backend-service.onrender.com/posts
+    curl https://writesphereblog-backend.onrender.com/posts
     ```
 - **GET /posts/:id**
 
   - **Description:** Fetches a specific blog post by ID.
   - **Example:**
     ```bash
-    curl https://your-backend-service.onrender.com/posts/1
+    curl https://writesphereblog-backend.onrender.com/posts/1
     ```
 - **POST /posts**
 
   - **Description:** Creates a new blog post.
   - **Example:**
     ```bash
-    curl -X POST https://your-backend-service.onrender.com/posts -H "Content-Type: application/json" -d '{"title": "New Post", "content": "This is the content of the new post."}'
+    curl -X POST https://writesphereblog-backend.onrender.com/posts -H "Content-Type: application/json" -d '{"title": "New Post", "content": "This is the content of the new post."}'
     ```
 - **PUT /posts/:id**
 
   - **Description:** Updates an existing blog post by ID.
   - **Example:**
     ```bash
-    curl -X PUT https://your-backend-service.onrender.com/posts/1 -H "Content-Type: application/json" -d '{"title": "Updated Title", "content": "Updated content."}'
+    curl -X PUT https://writesphereblog-backend.onrender.com/posts/1 -H "Content-Type: application/json" -d '{"title": "Updated Title", "content": "Updated content."}'
     ```
 - **DELETE /posts/:id**
 
   - **Description:** Deletes a specific blog post by ID.
   - **Example:**
     ```bash
-    curl -X DELETE https://your-backend-service.onrender.com/posts/1
+    curl -X DELETE https://writesphereblog-backend.onrender.com/posts/1
     ```
 
 ## **Environment Variables**
 
 For the frontend to correctly connect to the backend, ensure the following environment variable is set in Netlify:
 
-- **REACT_APP_API_BASE_URL**: This should be set to your Render backend URL (`https://your-backend-service.onrender.com`).
+- **REACT_APP_API_BASE_URL**: This should be set to your Render backend URL (https://writesphereblog-backend.onrender.com).
 
 ## **Deployment**
 
@@ -95,4 +95,4 @@ For the frontend to correctly connect to the backend, ensure the following envir
 
 ## **Support**
 
-For any issues or questions, please contact [support@writesphere.com](mailto:support@writesphere.com).
+For any issues or questions, please contact [pushkernaresh0607@gmail.com](mailto:support@pushkernaresh0607@gmail.com).
